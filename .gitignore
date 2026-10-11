@@ -1,0 +1,17 @@
+*.bak
+*.tar
+*.tgz
+*.zip
+*~
+.DS_Store
+.Trash-1000
+.env
+Thumbs.db
+cache.json
+cache/
+cache2.json
+games.txt
+go/games.csv
+go/games.txt
+stats*
+vendor/
