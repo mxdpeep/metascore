@@ -73,7 +73,7 @@ if (file_exists(CACHE) && is_readable(CACHE)) {
                 foreach ($scores as $k => $v) {
                     $c++;
                     $n = "{$cache[$k]['path']}{$cache[$k]['name']}";
-                    if ($c <= 15) {
+                    if ($c <= 20) {
                         $fc = sprintf("%02d", $c);
                         echo "{$fc}. {$n}\n";
                     }
@@ -92,11 +92,11 @@ if (file_exists(CACHE) && is_readable(CACHE)) {
                 foreach ($scores as $k => $v) {
                     $c++;
                     $n = "{$cache[$k]['path']}{$cache[$k]['name']}";
-                    if ($c <= 10) {
+                    if ($c <= 20) {
                         $fc = sprintf("%02d", $c);
                         echo "{$fc}. {$n}\n";
                     }
-                    if ($c > 10) {
+                    if ($c > 20) {
                         break;
                     }
                 }
@@ -146,11 +146,11 @@ if (file_exists(CACHE) && is_readable(CACHE)) {
                 foreach ($sizes as $k => $v) {
                     $c++;
                     $n = "{$cache[$k]['path']}{$cache[$k]['name']}";
-                    if ($c <= 10) {
+                    if ($c <= 20) {
                         $fc = sprintf("%02d", $c);
                         echo "{$fc}. {$n} {$cache[$k]['size']}GB\n";
                     }
-                    if ($c > 10) {
+                    if ($c > 20) {
                         break;
                     }
                 }
